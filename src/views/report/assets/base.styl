@@ -1,0 +1,145 @@
+// 导入样式
+.export
+	display flex
+	flex-direction column
+	background-color #fff
+	li
+		display flex
+		font-size 28px
+		color #333333
+		justify-content space-between
+		margin-top 10px
+		span
+			flex 1
+		span:nth-child(3)
+			display flex
+			justify-content center
+			align-items center
+			i
+				margin-top 4px
+	li:nth-child(2)
+		font-size 56px
+		color #05ACFF
+.active
+	margin-top: 20px;
+.ratio-text
+	display block
+	font-size 26px
+	color #818D9D
+	padding 30px
+	padding-right 0
+	text-align left
+	background-color #fff
+	em
+		color #ff5e68
+.ratio-list
+	display flex
+	background #fff
+	padding-bottom: 30px
+	li
+		flex 1
+		display flex
+		flex-direction column
+		position relative
+		span
+			font-size 24px
+			color #333333
+			margin-top 5px
+		em
+			height: 70px
+			line-height: 70px
+			margin-top: 20px
+			font-size: 49px;
+			color: #05ACFF;
+			display flex
+			justify-content center
+			align-items center
+	.ratio-list.active
+		display flex
+		background #fff
+		height: 238px
+		align-items center
+		justify-content space-between
+		padding-bottom 0
+		li
+			flex 1
+			display flex
+			flex-direction column
+			span
+				font-size: 24px;
+				color: #818D9D;
+				padding-bottom: 0
+			em
+				height: 104px
+				line-height: 104px
+				font-size: 56px;
+				color: #05ACFF;
+				display flex
+				justify-content center
+				align-items center
+				padding-bottom: 0
+				i
+					width: 18px
+					height: 18px
+					background url("../../assets/images/icon_add.png") no-repeat center
+					background-size 100% 100%
+					display inline-block
+					vertical-align baseline
+					margin-right: 12px
+				i.active
+					width: 18px
+					height: 3px
+					background url("../../assets/images/icon_reduce.png") no-repeat center
+					background-size 100% 100%
+					display inline-block
+					vertical-align middle
+					margin-right: 12px
+			em.active
+				color: #FF5E68
+.spr-right
+	font-size 28px
+	color #818D9D
+	width 100%
+	display block
+	background-color #ffffff
+	padding-top 20px
+.spr-success
+	color #BBBBBD
+.spr-warning
+	color #FF9248
+.line1:after {
+	position absolute
+	top 20%
+	right 0
+	width 2.1px
+	height 90px
+	content ''
+	background-color #eee
+}
+.line1 i {
+	font-style: normal;
+	position: absolute;
+	right: 12px;
+	top: 40px
+}
+.sgin-info
+	padding 20px 30px 48px 40px
+	background #fff
+	li
+		display flex
+		height 80px
+		align-items center
+		border-top 2.1px solid #eee
+		border-left 2.1px solid #eee
+		span
+			flex 1
+			height 80px
+			line-height 80px
+			font-size 26px
+			border-right 2.1px solid #eee
+		span:first-child
+			color #818D9D
+		span:last-child
+			color #00AAFF
+	li:last-child
+		border-bottom 2.1px solid #eee

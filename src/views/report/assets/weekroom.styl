@@ -1,0 +1,100 @@
+.class-room
+	width 100%
+	max-height 330px
+	overflow-y scroll
+	-webkit-overflow-scrolling touch
+	background-color #ffffff
+	padding-top 20px
+	display flex
+	flex-wrap wrap
+	margin-bottom 20px
+	.class-room-li
+		width 150px
+		height 110px
+		margin-left 30px
+		position: relative
+		.class-room-text
+			border-radius 8px
+			font-size 26px
+			color #614646
+			background #FFE7E7
+			display flex
+			flex-direction column
+			align-items center
+			.grade
+				overflow hidden
+				text-overflow ellipsis
+				white-space nowrap
+				display inline-block
+				height 35px
+				line-height 35px
+				width 100%
+			.grade:nth-child(1){
+				margin-top 10px
+			}
+			.grade:nth-child(2){
+				margin-bottom 10px
+			}
+		.select-class:after
+			content ''
+			display inline-block
+			position absolute
+			top 60px
+			right -15px
+			width 30px
+			height 30px
+			background-size 100% 100%
+			background-image url("../../assets/images/icon-choice.png")
+.class-room::-webkit-scrollbar {/*滚动条整体样式*/
+	width 10px    /*高宽分别对应横竖滚动条的尺寸*/
+	height 10px
+}
+.class-room::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+	border-radius 5px
+	-webkit-box-shadow inset 0 0 5px rgba(0,0,0,0.2)
+	background rgba(0,0,0,0.2)
+}
+.class-room::-webkit-scrollbar-track {/*滚动条里面轨道*/
+	-webkit-box-shadow inset 0 0 5px #fff
+	border-radius: 0
+	background #fff
+}
+.ratio-list
+	display flex
+	background #fff
+	padding-bottom: 30px
+	li
+		flex 1
+		display flex
+		flex-direction column
+		position: relative
+		span
+			font-size: 24px;
+			color: #333333;
+		em
+			height: 70px
+			line-height: 70px
+			margin-top: 25px
+			font-size: 60px;
+			color: #05ACFF;
+			display flex
+			justify-content center
+			align-items center
+.line1:after {
+	position absolute
+	top 50%
+	margin-top -20px
+	right 0
+	width 2.1px
+	height 80px
+	content ''
+	background-color #eee
+}
+.statics
+	margin-bottom 20px
+	background-color #fff
+	p
+		color #818D9D
+		font-size 28px
+		padding 20px 24px 5px
+		text-align left

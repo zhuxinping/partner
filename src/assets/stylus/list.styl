@@ -1,0 +1,332 @@
+.search
+	border-bottom 2.1px solid #eee
+	.search-input
+		width 85% !important
+	.screen
+		width 37px
+		height 40px
+		margin-right 3%
+		display block
+.main-list
+	background-color #fff
+	flex-direction column // 垂直属性
+	.first
+		width 100%
+		margin-bottom 20px
+		display flex
+		position relative
+		.logo
+			width 80px
+			height 80px
+			margin-right 20px
+			border-radius 100%
+		.right-content
+			height 80px
+			flex 1
+			display flex
+			flex-direction column
+			.content-top
+				display flex
+				flex-direction row
+				justify-content space-between
+				align-items center
+				.schoolName
+					width 200px
+					height 45px
+					line-height 45px
+					text-align left
+					color #333
+					font-size 32px
+					overflow hidden
+					text-overflow ellipsis
+					white-space nowrap
+				div
+					flex-direction row
+					display flex
+					.stand
+						padding 4px 20px 0
+						height 40px
+						line-height 40px
+						background-color #74a9ff
+						color #ffffff
+						font-size 24px
+						border-radius 100px
+						margin-left 20px
+			.content-bottom
+				display flex
+				padding-left 15px
+				line-height 70px
+				span
+					float left
+					margin-right 40px
+					font-size 24px
+					color #BBBBBD
+				span:nth-child(1){
+					margin-right 20px
+				}
+				span:nth-child(3) {
+					max-width 200px
+					overflow hidden
+					text-overflow ellipsis
+					white-space nowrap
+				}
+			.right-content-top
+				display flex
+				justify-content flex-start
+				align-items: center
+				color: #333333
+				font-size: 32px
+				span:nth-child(1){
+					width 150px
+					text-align left
+					overflow hidden
+					text-overflow ellipsis
+					white-space nowrap
+				}
+				span:nth-child(2){
+					width 400px
+					margin-left 20px
+					overflow hidden
+					text-overflow ellipsis
+					white-space nowrap
+					text-align left
+				}
+			.right-content-bottom
+				font-size 28px
+				color #818D9D
+			.person-content
+				display flex
+				flex 1
+				justify-content flex-start
+				align-items center
+				color #333333
+				font-size 32px
+				span
+					width 500px
+					text-align left
+					overflow hidden
+					text-overflow ellipsis
+					white-space nowrap
+			.person-content-bottom
+				font-size 28px
+				color #818D9D
+				line-height 45px
+				text-align left
+				span:nth-child(1) {
+					display block
+					width 100px
+				}
+				span:nth-child(2) {
+					width  200px
+					text-align left
+					margin-right 20px
+				}
+				span:nth-child(3) {
+					flex 1
+					max-width 290px
+					white-space nowrap
+					overflow hidden
+					text-overflow ellipsis
+				}
+		.right-top
+			width 70px
+			height 70px
+			position absolute
+			right -20px
+			top -20px
+	.second
+		width 100%
+		font-size 28px
+		color #74A9FF
+		text-align left
+	.thrid
+		font-size 28px
+		color #818D9D
+		width 100%
+		text-align left
+		max-height 115px
+		line-height 40px
+		overflow hidden
+		text-overflow ellipsis
+		word-break break-all
+		word-wrap break-word
+		display -webkit-box
+		-webkit-line-clamp 3
+		-webkit-box-orient vertical
+	.fourth
+		width 100%
+		margin-top 20px
+		display flex
+		justify-content flex-start
+		.select-img
+			width:120px
+			height:120px
+			margin-right 20px
+// 选择学校的样式
+	.art-second
+		display flex
+		width 100%
+		justify-content flex-start
+		margin-left 160px
+		span
+			width 130px
+			height 40px
+			line-height 40px
+			border-radius: 8px
+			display block
+			margin-left 20px
+			font-size 22px
+		span:nth-child(1) {
+			background #E5F6FF
+			color #00AAFF
+		}
+		span:nth-child(2) {
+			background #FFF3DD
+			color #EE9A00
+		}
+		span:nth-child(3) {
+			background #EDFFD9
+			color #7ED321
+		}
+	.forbid
+		color #BBBBBD !important
+		.art-bg{
+			background #F0F0F0 !important
+			color #BBBBBD !important
+		}
+// 联系人列表
+	.person-remark
+		width 700px
+		font-size 28px
+		line-height 40px
+		color #818D9D
+		text-align left
+		overflow hidden
+		text-overflow ellipsis
+		white-space nowrap
+// 排行榜样式
+.time-nav
+	display flex
+	align-items center
+	justify-content space-between
+	padding 0 30px
+	height 90px
+	background #fff
+	border-bottom 2.1px solid #eee
+	span
+		font-size 32px
+		color #7395CB
+		margin-right 10px
+	em
+		font-size 28px
+		color #818D9D
+.tab-hd
+	display flex
+	align-items center
+	justify-content space-between
+	background #fff
+	height 90px
+	padding 0 30px
+	border-bottom 2.1px solid #eee
+	a
+		position relative
+		font-size 30px
+		height 90px
+		line-height 90px
+		color #74A9FF
+		opacity .5
+		display inline-block
+		margin-right 30px
+	a.now
+		color: #74A9FF;
+		opacity 1
+	a.now:after
+		position absolute
+		left 0
+		bottom 12px
+		content ''
+		height 4px
+		width 100%
+		background #74A9FF
+		.right
+			font-size 28px
+			color: #818D9D
+.load-list
+	font-size 28px
+	background-color #f2f3f6
+	color #333
+	flex 1
+	overflow-y auto
+	.rank-li
+		height 160px
+		display flex
+		justify-content space-between
+		align-items center
+		padding 0 30px 0 0
+		border-bottom 2.1px solid #eee
+		background-color #fff
+		.list-left
+			display flex
+			flex 1
+			align-items center
+			flex-direction row
+			.avtar-img
+				width 80px
+				height 80px
+				display inline-block
+				margin-right 20px
+			.user-info
+				display flex
+				flex 1
+				align-items center
+				flex-direction column
+				font-size 24px
+				color #818D9D
+				span
+					align-self flex-start
+					margin-bottom 8px
+					em .score
+						color:#ff5e68
+				span:last-child
+					margin-bottom 0
+				.active
+					font-size 32px
+					color: #333
+					max-width 350px
+					overflow hidden
+					white-space nowrap
+					text-overflow ellipsis
+					display inline-block
+				.agent-school
+					display flex
+					flex-direction row
+					em
+						font-family Arial
+						margin-right 20px
+					.name-str
+						margin-right 20px
+						text-align left
+						max-width 250px
+						overflow hidden
+						white-space nowrap
+						text-overflow ellipsis
+						display inline-block
+		.list-right
+			display flex
+			width 150px
+			flex-direction column
+			align-items center
+			.top
+				font-size 22px
+				color #333
+			.bom
+				font-size 42px
+				height 60px
+				line-height 60px
+				color #666
+			.last
+				font-size 24px
+				color #818D9D
+	// 详情
+	.detail-li
+		height 140px

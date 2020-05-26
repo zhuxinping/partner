@@ -1,0 +1,293 @@
+.container
+	text-align left
+	background #fff
+	.main,
+	.flex
+		background #fff
+.text-over
+	overflow hidden
+	text-overflow ellipsis
+	display -webkit-box
+	-webkit-line-clamp 1
+	-webkit-box-orient vertical
+.fault-tab
+	overflow hidden
+	border-bottom 2.1px solid #eee
+	font-size 30px
+	text-align center
+	li
+		float left
+		width 50%
+		line-height 80px
+		span
+			height 60px
+			line-height 72px
+			display inline-block
+			//border-bottom 4px solid transparent
+			color #74a9ff
+			opacity .5
+	.current span
+		opacity 1
+		border-bottom 4px solid #7ca8ef
+.fault-caption
+	padding 40px 0 40px
+	text-align center
+	overflow hidden
+	border-bottom 2.1px solid #eee
+	li
+		float left
+		width 50%
+		.fault-caption-info
+			margin 0 0 20px
+		span
+			font-size 30px
+			margin-right 8px
+			font-weight bold
+.fault-list-status
+	padding 20px
+	border-bottom 2.1px solid #eee
+	strong
+		font-size 24px
+.layer-sel
+	font-style normal
+	float right
+	padding 0 32px 0 0
+	position relative
+.npd
+	padding 0
+.layer-sel i{
+	content ''
+	position absolute
+	right 0
+	top 8px
+	width 22px
+	height 28px
+	transform: rotate(90deg);
+	background  url("../../assets/images/icon_arrow2.png") no-repeat
+	background-size auto 100%
+}
+.fault-list
+	li
+		border-top 2.1px solid #efefef
+		padding 28px
+		position relative
+		line-height 36px
+		overflow hidden
+	li:first-child
+		border none
+	.qua-list-l
+		float left
+		width calc(100% - 156px)
+		padding-right 30px
+		box-sizing border-box
+	.fault-list-new
+		position absolute
+		display block
+		top 0
+		left 0
+		width 60px
+		height 60px
+		background url("../../assets/images/icon_new.png")
+		background-size 100% 100%
+	.fault-list-title
+		font-size 26px
+	.fault-list-time
+		color #aaa
+		margin 12px 0
+		span
+			margin-left 20px
+	.off-list-time
+		  margin 12px 0 0
+		span
+			margin 0 0 0 20px
+	.qua-list-content
+		-webkit-line-clamp 2
+	img
+		object-fit cover
+		width 156px
+		height 156px
+		float right
+		margin-top 6px
+	.line-list-r
+		float right
+		width 140px
+		text-align right
+		white-space nowrap
+		padding-top 24px
+		color #aaa
+		span
+			font-size 32px
+			color #000
+			margin-right 6px
+			position relative
+	.line-list-l
+		float left
+		width calc(100% - 140px)
+		padding-right 30px
+		box-sizing border-box
+.layer-shade
+	position fixed
+	top 0
+	left 0
+	width 100%
+	height 100%
+	background rgba(0,0,0,.3)
+	z-index 999
+.layer-status
+	position fixed
+	z-index 1000
+	width 60%
+	top 50%
+	left 50%
+	transform translate(-50%,-50%)
+	background #fff
+	padding 36px 32px 0
+	box-sizing border-box
+	border-radius 12px
+	li
+		margin-bottom 36px
+		line-height 32px
+.form-chk-ct
+	position relative
+	width 32px
+	height 32px
+	float left
+	margin-right 12px
+
+.form-chk-ct input
+	visibility hidden
+	margin: 0
+
+.form-chk-ct label
+	border-radius 6px
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	border 2.1px solid #c6c6c6
+	background #fff
+	cursor pointer
+	box-sizing border-box
+	z-index 2
+
+.form-chk-ct input[type=radio]:checked+label
+	background #74a9ff
+	border-color #74a9ff
+
+.form-chk-ct input[type=radio]:checked+label:after
+	position absolute
+	right 6px
+	bottom 12px
+	width 16px
+	height 8px
+	content ''
+	transform rotate(-45deg)
+	border 2.1px solid #fff
+	border-top none
+	border-right none
+
+.det-info-list
+	border-bottom 2.1px solid #eee
+	padding-bottom 32px
+.fault-det-list li
+		overflow hidden
+		padding 24px 0 0
+		line-height 40px
+.td-key
+	float left
+	width 150px
+	text-align right
+	color #333
+.td-value
+	float left
+	box-sizing border-box
+	padding 0 24px
+	width calc(100% - 150px)
+	color: #666;
+.det-feedback-img
+	object-fit cover
+	width 156px
+	height 156px
+	margin-top 10px
+	display: block;
+.detail-status
+	li
+		padding 24px 34px
+		border-bottom 2.1px solid #efefef
+		position relative
+	textarea
+		resize none
+		margin-top 12px
+		width 100%
+		height 200px
+		border none
+		box-sizing border-box
+		color #666
+		background #fff
+.required
+	width 15px
+	height 15px
+	margin 0 10px 0 0
+	position relative
+	top -2px
+.td-name
+	font-size 28px
+	color #333
+.detail-status-sel i
+	top 50%
+	transform: translateY(-50%) rotate(0);
+.submit-btn
+	width 100%
+	position absolute
+	bottom 0
+	left 0
+	line-height 80px
+	color #fff
+	background-color #7ca8ef
+	border 2.1px solid #7ca8ef
+	z-index 999
+.qua-content
+	padding-bottom 20px
+	span
+		font-size 24px
+		color #bbbbbd
+		position absolute
+		right 32px
+		bottom 6px
+.feedback-list
+	li
+		overflow hidden
+		padding 26px 0
+		border-bottom 2.1px solid #efefef
+	li:first-child
+		padding 24px 0
+	span
+		display block
+		float left
+		width 50%
+		text-align center
+	.feedback-time
+		color #666
+	.feedback-tit
+		font-size 28px
+/*i.icon-up,
+i.icon-down
+	display: inline-block;*/
+.fault-det-top
+	position relative
+.status-ndeal
+	width 100px
+	height 100px
+	display block
+	position absolute
+	border-radius 50%;
+	z-index 99
+	right 50px
+	top 50px
+	background #fff
+	background-size 100% 100%
+
+for a in 0 1 2 3
+	.status-ndeal{a}
+		background-image url("../../assets/images/icon_statusdeal" + a + ".png")
